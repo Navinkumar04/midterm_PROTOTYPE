@@ -1,0 +1,124 @@
+<!-- 
+     =======================
+     ||| contact-us.html |||
+     =======================
+  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linking the stylesheet to the html -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Events - The Frozen Spoon</title>
+</head>
+
+<body>
+    <header>
+
+        <!-- Adding background to the header -->
+        <div class="logo-background">
+            <!-- Adding the logo to the page -->
+            <a href="index.html"><img src="images/logo.png" alt="" class="logo"></a>
+        </div>
+        <br>
+        <!-- Creating the navbar -->
+        <nav class="navbar">
+            <ul>
+                <!-- Adding navbar items -->
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li>|</li>
+                <li><a href="menu.html" class="nav-item">Menu</a></li>
+                <li>|</li>
+                <li><a href="contact-us.html" class="nav-item">Contact Us</a></li>
+            </ul>
+        </nav>
+        <br>
+    </header>
+
+    <!-- Adding a header to add the contact main heading -->
+    <section class="banner">
+        <h2 class="banner-heading">
+            Contact Us
+        </h2>
+    </section>
+
+    <!-- Adding the contact form that is fillable -->
+        <div class="container">
+            <form action="POST">
+                <label for="firstname">First Name</label> <br>
+                <input type="text" id="firstname" name="firstname" placeholder="Please enter your first name">
+
+                <br>
+
+                <label for="lastname">Last Name</label> <br>
+                <input type="text" id="lastname" name="lastname" placeholder="Please enter your last name">
+
+                <br>
+
+                <label for="email">Email</label> <br>
+                <input type="email" id="email" name="email" placeholder="Please enter your email">
+
+
+                <br><br>
+
+                <label>Comment</label>
+                <br>
+                <textarea id="comment" name="comment" placeholder="Please enter you comment"
+                    style="height: 25vw"></textarea>
+
+                <br>
+
+                <div class="submit-button-div">
+                    <button type="button" class="submit-button"><span>Submit</span></button>
+                </div>
+            </form>
+        </div>
+
+    <!-- Adding the contact buttons that redirect to the designated function for pc, i.e. the email button works with the mailto: function -->
+    <div class="contact-info">
+        <h2>
+            Ways to reach out to us
+        </h2>
+        <div class="contact-buttons">
+            <div class="contact-info-button">
+                <a href="mailto:contact@frozenspoon.com"> <span class="button-text">Email us at:
+                        contact@frozenspoon.com</span></a>
+            </div>
+            <br>
+            <div class="contact-info-button">
+                <a href="contact-us.html"> <span class="button-text"> Give us a call us at: (437) 829 7860 </span> </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Adding a feedback form with just one text area to recieve the feedback -->
+    <div class="feedback">
+        <h2>
+            Please provide us your feedback
+        </h2>
+        <form action="POST">
+            <textarea id="feedback" name="feedback" placeholder="Please enter you comment"
+                style="height: 25vw"></textarea>
+
+            <br>
+
+            <div class="submit-button-div">
+                <button type="button" class="submit-button"><span>Submit</span></button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Adding a footer to the html webpage -->
+    <footer>
+        <p>
+            &copy;The Frozen Spoon, All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>
