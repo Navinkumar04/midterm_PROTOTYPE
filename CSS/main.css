@@ -1,0 +1,842 @@
+/* 
+CSS STYLES RESET: The following block of code is being used to remove all styles from our html in order to minimize contradiction and ease of understanding the applied styles.
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* 
+GLOBAL STYLES: This block of css code contains the styles for all the html files i.e. global styles, these styles will be applied to every web page that contain the corresponding html tags.
+*/
+
+html {
+	font-family: 'Bree Serif', serif;
+}
+
+
+/*---------------------------------------------Logo Styles-----------------------------------------*/
+.logo-background {
+	/* image reference: https://unsplash.com/photos/dgJT71cXlC4 */
+	background-image: url("../images/two-tone-background.jpg");
+	background-size: inherit;
+	background-size: 100%;
+}
+
+.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20vw;
+}
+
+
+/*--------------------------------------------Navbar Styles-----------------------------------------*/
+.navbar {
+	display: inline-block;
+	text-align: center;
+	background-color: lavenderblush;
+	width: 100%;
+	margin: 2vw 0rem;
+	padding: 1vw;
+}
+
+ul li {
+	list-style-type: none;
+	display: inline;
+	flex-wrap: wrap;
+}
+
+.navbar ul li {
+	padding: 0% 3%;
+	color: #bc6e79;
+}
+
+/* Setting logo sizes and navbar for different screen sizes to meet the design requirements */
+@media screen and (min-width: 800px) {
+	.logo {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 20vw;
+	}
+
+	.navbar ul li a {
+		font-size: 2vw;
+		text-decoration: none;
+		color: #bc6e79;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+	.logo {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 30vw;
+	}
+
+	.navbar ul li a {
+		font-size: 4vw;
+		text-decoration: none;
+		color: #bc6e79;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.logo {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 40vw;
+	}
+
+	.navbar ul li a {
+		font-size: 6vw;
+		text-decoration: none;
+		color: #bc6e79;
+	}
+}
+
+/* Adding color to link and visited links to have consistency */
+.navbar ul li a:link,
+.navbar ul li a:visited {
+	color: #bc6e79;
+}
+
+/* Adding a hover animation on the navbar links to enhance user experience design */
+.navbar ul li a:hover,
+.navbar ul li a:active {
+	color: #fd2f7e;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+}
+
+/*----------------------------------------------Body Styles----------------------------------------*/
+
+/* Adding a fixed background image to the website */
+body {
+	/* image reference: https://unsplash.com/photos/4Zaq5xY5M_c */
+	background-image: url("../images/brick-background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+/*---------------------------------------------Footer Styles----------------------------------------*/
+
+/* Adding the background image for the footer of every page with fixed size and it's styles */
+footer {
+	/* image reference: https://unsplash.com/photos/dgJT71cXlC4 */
+	background-image: url("../images/two-tone-background.jpg");
+	padding: 6vw;
+	background-size: inherit;
+	background-size: 100%;
+	text-align: right;
+}
+
+footer p {
+	font-size: 2vw;
+	color: lavenderblush;
+	font-weight: lighter;
+}
+
+
+/* ==================================================================================================
+HOMEPAGE STYLES: This block of css code contains the styles exclusively to the homepage.html webpage.
+====================================================================================================*/
+
+/* Adding styles to the saturday deal*/
+.banner {
+	background-color: #bc6e79;
+	padding: 0%;
+	text-align: center;
+	color: lavenderblush;
+	padding: 1rem;
+	margin: 0rem 0rem 2vw 0rem;
+}
+
+.banner h2 {
+	font-size: 5vw;
+	font-weight: bold;
+}
+
+.banner h3 {
+	font-size: 2vw;
+}
+
+.banner p {
+	font-size: .5vw;
+}
+
+
+/*----------------------------------------Flavour of the day styles--------------------------------*/
+
+/* Adding styles to the flavour of the banner */
+div.flavour-of-the-day {
+	width: 100%;
+	background-color: #FABBD0;
+	padding-top: 3vw;
+	color: lavenderblush;
+}
+
+.flav-of-the-day-banner-image {
+	width: 32vw;
+	float: left;
+	padding-left: 7vw;
+}
+
+div.flav-of-the-day-text h3 {
+	font-size: 3.75vw;
+	font-weight: lighter;
+	color: #8E555F;
+}
+
+div.flav-of-the-day-text p {
+	font-size: 1.75vw;
+	padding: 2vw 0;
+	color: #8E555F;
+}
+
+/* Adding styles to the deal of the day button */
+.flav-of-the-day-button-div {
+	text-align: right;
+	padding: 5vh;
+	margin: -2vw;
+}
+
+.flav-of-the-day-button {
+	font-family: 'Bree Serif', serif;
+	padding: 2vw;
+	font-size: 3.75vw;
+	text-align: right;
+	color: #8E555F;
+	border-radius: 5%;
+	border: none;
+	text-align: center;
+	transition: all 1s;
+	cursor: pointer;
+	margin: 1vw;
+	margin-right: 10vw;
+}
+
+
+.flav-of-the-day-button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.flav-of-the-day-button span:after {
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	transition: 0.5s;
+}
+
+/* Adding hover animations to the flavour of the day banner button */
+.flav-of-the-day-button:hover {
+	box-shadow: 5px 5px 5px 5px rgb(255, 0, 212, 0.1);
+}
+
+.flav-of-the-day-button:hover span {
+	padding: 0 1.5vw;
+}
+
+.flav-of-the-day-button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+
+/*----------------------------------------Menu Section cards styles--------------------------------*/
+
+
+/* Creating a grid for the menu cards */
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	grid-gap: 5vw;
+}
+
+/* Adding item 1 to the grid */
+.grid-container .item-1 {
+	grid-column: 1 / 2;
+	grid-row: 1 / 3;
+}
+
+.grid-container .item-1 img {
+
+	margin: 5vw 0vw 0vw 1vw;
+	width: 47vw;
+}
+
+/* Adding item 2 to the grid */
+.grid-container .item-2 {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+}
+
+.grid-container .item-2 img {
+
+	margin: 5vw 0vw 0vw -1vw;
+	width: 47vw;
+
+}
+
+/* Adding hover styles to the menu card to show interactivity */
+.grid-container .item-2 img:hover {
+	transform: scale(1.02);
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+	box-shadow: 5px 5px 5px grey;
+}
+
+/* Adding item 3 to the grid */
+.grid-container .item-3 {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+
+.grid-container .item-3 img {
+	margin: 2.2vw 0vw 0vw -1vw;
+	width: 47vw;
+}
+
+/* Adding hover styles to the menu card to show interactivity */
+.grid-container .item-3 img:hover {
+	transform: scale(1.02);
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+	box-shadow: 5px 5px 5px grey;
+}
+
+
+/*------------------------------------------About Us Styles----------------------------------------*/
+
+/* Adding styles to the about us section */
+.about-us {
+	background-color: #bc6e79;
+	color: lavenderblush;
+	margin-top: 2vw;
+	padding: 2vw;
+}
+
+.about-us h3 {
+	font-size: 3.75vw;
+	padding: 1vw;
+}
+
+.about-us p {
+	line-height: 1.3;
+	font-size: 2vw;
+	padding: 1vw;
+}
+
+/*-------------------------------------Location and Hours Styles-----------------------------------*/
+
+/* Creating a grid for the location and store hours section */
+
+.grid-container-2 {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	grid-gap: 5vw;
+}
+
+/* Adding item 4 to the grid */
+.grid-container-2 .item-4 {
+	grid-column: 1 / 2;
+	grid-row: 1 / 3;
+	background-color: #bc6e79;
+	color: lavenderblush;
+	margin: 4vw 0;
+	padding: 1vw;
+	margin: 5vw 0vw 1vw 1vw;
+	width: 37vw;
+	height: auto;
+}
+
+.grid-container-2 .item-4 h3 {
+	font-size: 3.75vw;
+	padding: 1vw;
+}
+
+.grid-container-2 .item-4 p {
+	line-height: 1.3;
+	font-size: 2vw;
+	padding: 1vw;
+}
+
+/* Adding item 5 to the grid */
+.grid-container-2 .item-5 {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+}
+
+.grid-container-2 .item-5 iframe {
+	margin: 5vw 0vw 0vw -1vw;
+	width: 55vw;
+	height: 33vw;
+}
+
+/*------------------------------------Events Shortcut Card Styles----------------------------------*/
+
+/* Creating a grid for the events section */
+.grid-container-3 {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	grid-gap: 5vw;
+}
+
+/* Adding item 6 to the grid */
+.grid-container-3 .item-6 {
+	grid-column: 1 / 2;
+	grid-row: 1 / 3;
+}
+
+.grid-container-3 .item-6 img {
+
+	margin: 1vw 0vw 2vw 1vw;
+	width: 47vw;
+}
+
+.grid-container-3 .item-6 img:hover {
+	transform: scale(1.02);
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+	box-shadow: 5px 5px 5px grey;
+}
+
+/* Adding item 7 to the grid */
+.grid-container-3 .item-7 {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	text-align: center;
+	background-color: #bc6e79;
+	color: lavenderblush;
+	margin: 4vw 0;
+	padding: 1vw;
+	margin: 1vw 0vw 0vw 1vw;
+	width: 37vw;
+	height: auto;
+}
+
+.grid-container-3 .item-7 h3 {
+	font-size: 3.75vw;
+	padding: 1vw;
+}
+
+/* Adding item 8 to the grid */
+.grid-container-3 .item-8 {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+	text-align: center;
+	background-color: #bc6e79;
+	color: lavenderblush;
+	margin: 1vw 0;
+	padding: 1vw;
+	margin: 0vw 0vw 1vw 1vw;
+	width: 37vw;
+	height: auto;
+}
+
+.grid-container-3 .item-8 h3 {
+	font-size: 3.75vw;
+	padding: 1vw;
+}
+
+/* Adding styles to the events shortcut buttons */
+.events-short-button-div {
+	text-align: center;
+	padding: 5vh;
+	margin: -2vw;
+}
+
+.events-short-button {
+	font-family: 'Bree Serif', serif;
+	padding: 1vw;
+	font-size: 1.75vw;
+	text-align: right;
+	color: #8E555F;
+	border-radius: 5%;
+	border: none;
+	text-align: center;
+	transition: all 1s;
+	cursor: pointer;
+	margin: 1vw;
+}
+
+/* Adding hover animations to the events shortcut buttons */
+.events-short-button:hover {
+	box-shadow: 2px 2px 2px 2px rgb(255, 255, 255, 0.4);
+}
+
+.events-short-button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.events-short-button span:after {
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	transition: 0.5s;
+}
+
+.events-short-button:hover span {
+	padding: 0 1.5vw;
+}
+
+.events-short-button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+/*================================================================================================= 
+MENU PAGE STYLES: This block of css code contains the styles exclusively to the menu.html webpage.
+===================================================================================================*/
+
+/* Adding common styles to different sections of the menu */
+.menu-flavours,
+.fam-custom-packs,
+.vegan-options,
+.keto,
+.note {
+	color: #8E555F;
+	background-color: rgba(255, 230, 235, 1);
+	margin: 2vw;
+	padding-right: 3vw;
+	font-size: 3vw;
+	line-height: 1.3;
+}
+
+/* Aligning the prices heading i.e. the number of scoops  */
+.prices {
+	text-align: right;
+	padding: 3vw 4vw 0 0;
+}
+
+/* Spacing the items of the menu in accordance to it's position in the menu section */
+.menu-flavours p,
+.fam-custom-packs p {
+	padding-left: 5vw;
+}
+
+/* Setting the sizes of the images in the menu */
+.ice-cream {
+	width: 100vw;
+}
+
+/* adding the styles to the paragraphs in vegan and keto section */
+.vegan-options p,
+.keto p {
+	text-align: center;
+	padding: 4vw;
+	line-height: 1.3;
+}
+
+/* Adding the styles to the note section as it is different from the rest of the page */
+.note {
+	text-align: center;
+	font-size: 2vw;
+	padding: 4vw;
+	line-height: 1.3;
+}
+
+/*=================================================================================================== 
+CONTACT US PAGE STYLES: This block of css code contains the styles exclusively to the contact-us.html webpage.
+=====================================================================================================*/
+
+/* Adding the styles to the contact us form container i.e. the basic styles of the form container */
+.container {
+	color: lavenderblush;
+	text-align: center;
+	border-radius: 5px;
+	background-color: #bc6e79;
+	padding: 2vw;
+	width: 100vw;
+	margin-bottom: 2vw;
+	font-size: 2vw;
+}
+
+/* Adding styles to the input areas of the different sections of the form */
+input,
+textarea {
+	color: #8E555F;
+	width: 50vw;
+	padding: 1vw;
+	border: 1px solid lavenderblush;
+	border-radius: 2px;
+	box-sizing: border-box;
+	margin-top: 1vw;
+	margin-bottom: 1.5vw;
+	resize: vertical;
+}
+
+/* Adding the basic styles to the submit button of the contact us form */
+.submit-button {
+	font-family: 'Bree Serif', serif;
+	padding: 1vw;
+	font-size: 1.75vw;
+	text-align: right;
+	color: #8E555F;
+	border-radius: 5%;
+	border: none;
+	text-align: center;
+	transition: all 1s;
+	cursor: pointer;
+	margin: 1vw;
+}
+
+.submit-button:hover {
+	box-shadow: 2px 2px 2px 2px rgb(255, 255, 255, 0.4);
+}
+
+.submit-button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 1s;
+}
+
+.submit-button span:after {
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	transition: 1s;
+}
+
+/* Adding hover animations to the submit button for the contact us form */
+.submit-button:hover span {
+	padding: 0 1.5vw;
+}
+
+.submit-button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+/* Adding styles to the contact buttons i.e. email and phone number */
+.contact-info {
+	background-color: #bc6e79;
+	margin-bottom: 2vw;
+	text-align: center;
+	padding: 2vw;
+}
+
+.contact-info h2 {
+	font-size: 3vw;
+	color: lavenderblush;
+}
+
+/* Adding the basic styles to the contact buttons and aligning them in the same line */
+.contact-buttons {
+	text-decoration: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	color: #8E555F;
+	padding: 2vw 2vw;
+}
+
+/* Adding background to the buttons and adding a transition */
+.contact-buttons div {
+	font-size: 2vw;
+	background-color: lavenderblush;
+	padding: 2vw;
+}
+
+/* Adding hover transitions to the buttons */
+.contact-buttons div:hover {
+	padding: .5vw 3vw;
+	background-color: lavenderblush;
+	color: #8E555F;
+}
+
+.contact-info-button {
+	font-family: 'Bree Serif', serif;
+	padding: 1vw;
+	font-size: 1.75vw;
+	text-align: right;
+	border: none;
+	text-align: center;
+	transition: all 1s;
+	cursor: pointer;
+	margin: 1vw;
+}
+
+/* Adding the text color to the text of the links in the button */
+.contact-info-button a {
+	color: #8E555F;
+}
+
+.contact-info-button:hover {
+	box-shadow: 2px 2px 2px 2px rgb(255, 255, 255, 0.4);
+	transition: all 0.5s ease-out;
+}
+
+.contact-info-button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 1s;
+	margin: 2vw;
+}
+
+/* Adding the styles to the feedback section */
+.feedback {
+	color: lavenderblush;
+	text-align: center;
+	border-radius: 5px;
+	background-color: #bc6e79;
+	padding: 2vw;
+	width: 100vw;
+	margin-bottom: 2vw;
+	font-size: 2vw;
+}
+
+/* Adding styles to the heading of the feedback section */
+.feedback h2 {
+	margin: 2vw;
+	font-size: 3vw;
+}
